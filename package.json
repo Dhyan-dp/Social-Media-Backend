@@ -12,19 +12,32 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "eslint": "^9.27.0",
+    "@eslint/js": "^9.28.0",
+    "eslint": "^9.28.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.0.0",
-    "prettier": "^3.5.3"
+    "prettier": "^3.5.3",
+    "prisma": "^6.8.2"
   },
   "lint-staged": {
     "**/*.{js,cjs,mjs}": [
       "eslint --fix",
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "@prisma/client": "^6.8.2",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^7.0.3",
+    "validator": "^13.15.15"
   }
 }
